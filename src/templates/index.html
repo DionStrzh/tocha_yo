@@ -1,0 +1,12 @@
+---
+title: Tocha
+---
+
+{% extends "layouts/_layout.html" %} {% block content %} {# partial example #}
+<div class="intro__wrapper">
+  {% include "components/_header.html" %} {% include "components/_intro.html" %}
+</div>
+{% include "components/_info.html" %} {% include "components/_plans.html" %}{%
+include "components/_steps.html" %}{% include "components/_reviews.html" %} {%
+include "components/_subscribe.html" %}{% include "components/_footer.html" %}
+{#{mixins.icon('facebook')}#} {% endblock %}

@@ -1,0 +1,38 @@
+.button
+  outline: 0
+  border: 0
+  background: $mainViolet 
+  color: #fff
+  cursor: pointer 
+  font-size: 16px
+  font-family: $mainFont
+  font-weight: 700
+  padding: 10px 20px
+  border-radius: 6px
+  transition: .4s ease
+  &:focus, &:hover
+    background: #18191F
+    color: #fff
+  
+  &--signin
+    color: $mainViolet
+    background: $helperViolet
+    margin-right: 12px  
+  &--intro
+    font-size: 18px
+    padding: 12px 32px
+  &--email
+    padding: 14px 24px
+    font-size: 14px
+    border-radius: 0 5px 5px 0 
+    width: 120px
+    background: $bgBlack
+    &:hover, &:active
+      opacity: 0
+  &--plans
+    width: 100%
+    max-width: 287px
+    font-weight: bold
+    font-size: 18px
+    line-height: 133%
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07)

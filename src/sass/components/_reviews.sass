@@ -1,0 +1,68 @@
+.reviews
+  position: relative
+  background: rgba(242, 247, 255, 0.5)
+  text-align: center
+  padding: 17px 0 122px 0 
+  &--container
+    position: relative
+  h2
+    color: $titleBlack
+    line-height: 139%
+    font-size: 46px
+    font-weight: 800
+    margin-bottom: 48px
+  .quotemarks
+    position: absolute
+    bottom: 75% 
+    right: 0
+  &__flex-wrapper
+    display: flex
+    justify-content: space-between
+  &__flex--column
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+  &__card
+    position: relative
+    background: #fff
+    border-radius: 6px
+    width: 540px
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07)
+    &::after
+      content: ''
+      position: absolute
+      width: 15px
+      height: 15px
+      background: #fff
+      right: 50%
+      transform: rotate(45deg) translateX(-50%)
+    &__author
+      margin-top: 30px
+    &__author--flex
+      display: flex
+      align-items: center
+      justify-content: center
+    &__author__text
+      margin-left: 16px
+      text-align: left
+      h5
+        font-weight: 700
+        font-size: 18px
+        line-height: 156%
+        color: #1d2530
+      p
+        font-size: 14px
+        line-height: 171%
+    &__text
+      padding: 32px 32px 56px 32px
+    h4
+      font-family: $helperFont
+      color: $titleDark
+      line-height: 156%
+      font-size: 18px
+      font-weight: 500
+      margin-bottom: 8px
+    p
+      font-size: 14px
+      line-height: 171%

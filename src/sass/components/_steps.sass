@@ -1,0 +1,51 @@
+.steps
+  text-align: center
+  background: url('../img/stepsbg.png') no-repeat
+  background-size: cover
+  background-position: 0 590px
+  h2
+    font-weight: 800
+    font-size: 46px
+    line-height: 139%
+    margin-bottom: 40px
+  &__flex
+    padding-top: 16px
+    display: flex
+    justify-content: space-between
+    position: relative
+  .card--column
+    display: flex
+    flex-direction: column
+    align-items: center
+    h5
+      font-weight: bold
+      font-size: 18px
+      line-height: 156%
+      margin-bottom: 4px
+    p
+      line-height: 162%
+      font-size: 16px
+      margin-bottom: 56px
+  &__step
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $mainViolet
+    font-size: 30px
+    line-height: 100%
+    font-weight: bold
+    background: $helperViolet
+    width: 72px
+    height: 72px
+    border-radius: 50px
+    margin-bottom: 16px
+    &.step--second
+      margin-top: 86px
+    &__plane
+      position: absolute
+      &.plane--left
+        top: 5%
+        left: 15%
+      &.plane--right
+        transform: rotate(-5deg)
+        right: 15%
