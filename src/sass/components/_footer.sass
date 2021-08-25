@@ -1,16 +1,26 @@
 .footer
   padding-top: 104px
   background: #141b23
+  +r(1109)
+    padding-top: 60px
   &__info
     padding-bottom: 104px
+    +r(1109)
+      img
+        margin-right: 33px
+      padding-bottom: 77px
   &__info__flex-wrapper
     display: flex
     justify-content: space-between
     align-items: start
   &__links
     p
+      line-height: 150%
+      font-size: 20px
       color: $textGray
       margin-bottom: 32px
+    li
+      line-height: 162%
     li:not(:last-child)
       margin-bottom: 12px
     a
@@ -19,10 +29,23 @@
     &__flex-wrapper
       display: flex
       justify-content: space-between
+      +r(767)
+        flex-direction: column
     &__list--first
       margin-right: 126px
+      +r(1109)
+        margin-right: 60px
+        margin-bottom: 24px
+      +r(767)
+        margin-right: 40px
     &__list--second
       margin-right: 132px
+      +r(1109)
+        margin-right: 56px
+
+    // &__list--first, &__list--second
+    //   +r(1109)
+    //     margin-right: 0
   
 
   .copyrights

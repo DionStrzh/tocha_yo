@@ -21,6 +21,9 @@
                 <button class="button button--signin">Вход</button>
                 <button class="button">Регистрация</button>
               </div>
+              <button class="header__burger header__burger--active">
+                <span></span>
+              </button>
             </div>
           </div>
         </header>
@@ -29,10 +32,12 @@
             <div class="intro__flex-wrapper">
               <div class="intro__inner-wrapper">
                 <h1 class="intro__title">
-                  <strong>Telegram чат</strong> на вашем сайте
+                  <strong>Telegram чат</strong> <br /> на вашем сайте
                 </h1>
-                <p class="intro__description"> Общение с клиентами станет простым <br /> и удобным, а подключение займет 5 минут. Первый месяц — <strong>бесплатно!</strong>
-                </p>
+                <div class="intro__description">
+                  <p> Общение с клиентами станет простым и удобным, а подключение займет 5 минут. </p>
+                  <p>Первый месяц — <strong>бесплатно!</strong></p>
+                </div>
                 <button class="button button--intro">Подключить</button>
               </div>
               <img class="intro__img" src="img/introphone.svg" alt="phone" />
@@ -91,7 +96,7 @@
                 <button class="button button--plans">Подключить за 0₽</button>
               </div>
             </div>
-            <div class="plans__card">
+            <div class="plans__card plans__card--hide hide">
               <h3 class="plans__title">Базовый</h3>
               <div class="plans__card-info">
                 <h4 class="plans__subtitle"> Менее 1000 <br /> посещений в сутки </h4>
@@ -99,7 +104,7 @@
                 <button class="button button--plans">Подключить за 200₽</button>
               </div>
             </div>
-            <div class="plans__card">
+            <div class="plans__card plans__card--hide">
               <h3 class="plans__title">Премиум</h3>
               <div class="plans__card-info">
                 <h4 class="plans__subtitle"> Более 1000 <br /> посещений в сутки </h4>
@@ -109,7 +114,6 @@
             </div>
           </div>
         </div>
-        <h2 class="test">Something new</h2>
       </section>
       <section class="steps">
         <div class="container">
@@ -126,7 +130,7 @@
               <div class="card--column">
                 <div class="steps__step step--second">2</div>
                 <h5>Подключение Tocha</h5>
-                <p> Tocha подключает Telegram бота <br /> к вашиму сайту </p>
+                <p class="steps__step--p"> Tocha подключает Telegram бота к вашиму сайту </p>
                 <img src="img/phone2.svg" alt="phone2" />
               </div>
               <img class="steps__step__plane plane--right" src="img/rightplane.svg" alt="plane2" />
@@ -162,9 +166,9 @@
                 </div>
               </div>
             </div>
-            <div class="reviews__flex--column">
+            <div class="reviews__flex--column hide">
               <div class="reviews__card">
-                <div class="reviews__card__text">
+                <div class="reviews__card__text hide">
                   <h4>Теперь мы идем в ногу со временем</h4>
                   <p> А ещё интерактивные прототипы превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов формируют сеть. </p>
                 </div>

@@ -3,11 +3,19 @@
   background: url('../img/stepsbg.png') no-repeat
   background-size: cover
   background-position: 0 590px
+  +r(1109)
+    padding-bottom: 30px  
+  +r(767)
+    overflow: hidden
   h2
     font-weight: 800
     font-size: 46px
     line-height: 139%
     margin-bottom: 40px
+    +r(1109)
+      font-size: 30px
+      line-height: 125%
+      margin-bottom: 16px 
   &__flex
     padding-top: 16px
     display: flex
@@ -17,6 +25,8 @@
     display: flex
     flex-direction: column
     align-items: center
+    +r(767)
+      margin-right: 32px
     h5
       font-weight: bold
       font-size: 18px
@@ -26,6 +36,12 @@
       line-height: 162%
       font-size: 16px
       margin-bottom: 56px
+      +r(1109)
+        font-size: 14px
+        line-height: 157%
+    img
+      width: 211px
+      height: 422px
   &__step
     display: flex
     justify-content: center
@@ -39,10 +55,18 @@
     height: 72px
     border-radius: 50px
     margin-bottom: 16px
+    &--p
+      max-width: 269px
+      +r(1109)
+        max-width: 210px
     &.step--second
       margin-top: 86px
+      +r(1109)
+        margin-top: 0
     &__plane
       position: absolute
+      +r(1109)
+        display: none
       &.plane--left
         top: 5%
         left: 15%

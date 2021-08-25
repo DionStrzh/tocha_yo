@@ -3,18 +3,28 @@
   background: rgba(242, 247, 255, 0.5)
   text-align: center
   padding: 17px 0 122px 0 
-  &--container
-    position: relative
+  overflow: hidden
+  +r(1109)
+  padding: 60px 0 
   h2
     color: $titleBlack
     line-height: 139%
     font-size: 46px
     font-weight: 800
     margin-bottom: 48px
+    +r(1109)
+      font-size: 32px
+      line-height: 125%
+      margin-bottom: 40px
   .quotemarks
     position: absolute
     bottom: 75% 
     right: 0
+    +r(767)
+      top: 16px
+      right: 0
+      width: 53px
+      height: 46px
   &__flex-wrapper
     display: flex
     justify-content: space-between
@@ -23,12 +33,19 @@
     flex-direction: column
     justify-content: space-between
     align-items: center
+    &.hide
+      +r(767)
+        display: none
   &__card
     position: relative
     background: #fff
     border-radius: 6px
     width: 540px
     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07)
+    +r(1109)
+      margin-right: 30px
+    +r(767)
+      max-width: 328px
     &::after
       content: ''
       position: absolute

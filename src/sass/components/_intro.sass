@@ -1,20 +1,41 @@
 .intro
-  padding-top: 91px
-  padding-bottom: 285px
-  min-height: 583px
+  padding: 91px 0 285px 0
+  +r(1109)
+    padding-top: 40px
+    padding-bottom: 36px
+    
+  +r(767)
+    padding-top: 40px
+
   &__title
     font-weight: 800
     font-size: 50px
     line-height: 120%
     margin-bottom: 24px
-    strong
-      display: block
+    +r(1109)
+      font-size: 32px
+      line-height: 125%
+      margin-bottom: 32px
+  &__description
+    font-size: 24px
+    line-height: 142%
+    margin-bottom: 32px
+    +r(1109)
+      max-width: 270px
+      font-size: 18px
+      line-height: 156%
+    +r(767)
+      max-width: 330px
   &__wrapper
     background-image: url('../img/bg.png')
   &__flex-wrapper
     display: flex
     justify-content: space-between
     position: relative
+    +r(767)
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
   &__img
     display: block
     position: absolute
@@ -22,10 +43,14 @@
     width: 100%
     right: 0
     top: -32px
+    +r(1109)
+      width: 420px
+      top: 0  
+    +r(767)
+      position: static
+      width: 330px
   &__inner-wrapper
     max-width: 482px
+    margin-bottom: 60px
     strong
       color: $mainViolet
-    p
-      margin-bottom: 32px 
-  

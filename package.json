@@ -72,6 +72,7 @@
     "lodash": "^4.17.11"
   },
   "dependencies": {
+    "owl.carousel": "^2.3.4",
     "svg4everybody": "^2.1.9",
     "svgxuse": "^1.2.6"
   }

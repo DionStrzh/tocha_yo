@@ -1,19 +1,31 @@
 .subscribe
   padding: 90px 0
   &__info
-    background: url(../img/subscribebackground.png)
+    background: url('../img/subscribebackground.png')
+    +r(1109)
+      background: url('../img/subbg.png')
+    +r(767)
+      background: url('../img/bgsub.png')
     position: relative
     display: flex
     justify-content: center
     align-items: center
     width: 100%
     height: 288px
+    +r(767)
+      flex-direction: column
     .subphone
       position: relative
       top: 8px
       left: 0
+      +r(1109)
+        width: 269px
+        height: 239px
+        top: 28px
   &__form
     margin-left: 80px
+    +r(1109)
+    margin-left: 30px
     width: 445px
     p
       color: #fff
@@ -21,6 +33,9 @@
       line-height: 124%
       font-size: 33px
       margin-bottom: 32px
+      +r(1109)
+        font-size: 24px
+        line-height: 133%
     input
       border-radius: 5px 0 0 5px
       width: 100%
