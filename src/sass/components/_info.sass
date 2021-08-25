@@ -1,29 +1,59 @@
 .info
   padding-top: 70px
   padding-bottom: 82px
-  background: rgba(242, 247, 255, 0.5);
+  background: rgba(242, 247, 255, 0.5)
+  +r(1109)
+    padding: 60px 0
+  +r(767)
   h2
     font-weight: 800
     font-size: 48px
     line-height: 67%
     margin-bottom: 68px
+    +r(1109)
+      font-size: 32px
+      line-height: 125%
+      margin-bottom: 40px
   h3
     font-weight: 600
     font-size: 24px
     line-height: 133%
     margin-bottom: 8px
+    +r(1109)
+      font-size: 20px
+      line-height: 160%
+      margin-bottom: 4px
   p
     font-size: 16px
     line-height: 162%
   &__inner
     display: flex
     justify-content: space-between
+    +r(767)
+      flex-direction: column  
+      align-items: center
+  &__list
+    +r(767)
+      margin-bottom: 24px
   &__card
     display: flex
     max-width: 522px
+    +r(1109)
+      min-width: 388px
+    +r(767)
+      min-width: 329px
     &:not(:last-child)
       margin-bottom: 48px
+      +r(1109)
+        margin-bottom: 16px 
     &__img
       margin-right: 26px
+      +r(1109)
+        width: 42px
+        height: 42px
+        margin-right: 18px
   &__phone
     margin-right: 100px
+    +r(1109)
+      width: 300px
+      margin-right: 40px
